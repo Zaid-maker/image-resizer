@@ -1,0 +1,27 @@
+{
+  "name": "image-resize-electron",
+  "productName": "Image Resizer",
+  "version": "1.0.0",
+  "description": "an image resizing app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electron": "^21.1.0"
+  },
+  "author": "DevMirza",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaid-maker/image-resizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zaid-maker/image-resizer/issues"
+  },
+  "homepage": "https://github.com/Zaid-maker/image-resizer#readme"
+}
