@@ -4,20 +4,20 @@ on:
     types:
       - created
 
-#jobs:
-#  publish_on_linux:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v2
-#      - uses: actions/setup-node@master
-#        with:
-#          node-version: 16
-#      - name: install dependencies
-#        run: npm install
-#      - name: publish
-#        run: npm run publish
-#        env:
-#          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
+jobs:
+  publish_on_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+        with:
+          node-version: 16
+      - name: install dependencies
+        run: npm install
+      - name: publish
+        run: npm run publish
+        env:
+          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
 
   publish_on_mac:
     runs-on: macos-latest
