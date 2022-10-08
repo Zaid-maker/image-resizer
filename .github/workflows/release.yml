@@ -1,0 +1,8 @@
+name: Release the App
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish_on_linux:
