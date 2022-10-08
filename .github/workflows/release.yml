@@ -17,7 +17,7 @@ jobs:
       - name: publish
         run: npm run publish
         env:
-          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish_on_mac:
     runs-on: macos-latest
@@ -31,7 +31,7 @@ jobs:
       - name: publish
         run: npm run publish
         env:
-          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish_on_win:
     runs-on: windows-latest
@@ -45,4 +45,4 @@ jobs:
       - name: publish
         run: npm run publish
         env:
-          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
