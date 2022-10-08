@@ -56,8 +56,8 @@
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
-              "owner": "erikhofer",
-              "name": "electron-publish-example",
+              "owner": "Zaid-maker",
+              "name": "image-resizer",
               "draft": true
             }
           }
