@@ -16,7 +16,7 @@ jobs:
         run: npm install
       - name: publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
         run: npm run publish
 
   publish_on_mac:
@@ -30,7 +30,7 @@ jobs:
         run: npm install
       - name: publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
         run: npm run publish
 
   publish_on_win:
@@ -44,5 +44,5 @@ jobs:
         run: npm install
       - name: publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN_FOR_APP_RELEASE: ${{ secrets.TOKEN_FOR_APP_RELEASE }}
         run: npm run publish
