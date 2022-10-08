@@ -32,23 +32,16 @@
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "electron_publish_example"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
           "config": {}
         },
         {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "name": "@electron-forge/maker-zip"
+        },
+        {
+          "name": "@electron-forge/maker-deb"
+        },
+        {
+          "name": "@electron-forge/maker-rpm"
         }
       ],
       "publishers": [
@@ -57,9 +50,10 @@
           "config": {
             "repository": {
               "owner": "Zaid-maker",
-              "name": "image-resizer",
-              "draft": true
-            }
+              "name": "image-resizer"
+            },
+            "prerelease": false,
+            "draft": true
           }
         }
       ]
