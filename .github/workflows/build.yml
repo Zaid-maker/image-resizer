@@ -2,18 +2,6 @@ name: Build the App
 on: [ push, pull_request ]
 
 jobs:
-  build_on_linux:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@master
-      with:
-        node-version: 16
-    - name: Install dependencies
-      run: npm install
-    - name: Build
-      run: npm run make
-
   build_on_mac:
     runs-on: macos-latest
     steps:
