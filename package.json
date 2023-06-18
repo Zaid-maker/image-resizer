@@ -1,7 +1,7 @@
 {
   "name": "image-resize-electron",
   "productName": "Image Resizer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "an image resizing app",
   "main": "main.js",
   "scripts": {
